@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { HeaderContext } from "../App";
-
-function QuickCard({ item ,data }) {
-  const { cartItems, setCartItems, totalPrice, setTotalPrice, setEmpty } = useContext(HeaderContext);
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+function QuickCard({ item, data }) {
+  const { cartItems, setCartItems, totalPrice, setTotalPrice, setEmpty } =
+    useContext(HeaderContext);
   function Add() {
     const product = data.find((d) => d.id === item.id);
     if (product && product.stock > item.count) {
@@ -18,7 +20,8 @@ function QuickCard({ item ,data }) {
         setEmpty("hidden");
       }
     } else {
-      alert("Insufficient stock for this item.");
+      toast.error("Stokda yoxdur!");
+      return;
     }
   }
   function Dec() {
@@ -62,6 +65,9 @@ function QuickCard({ item ,data }) {
         <button className="bg-blue-600 text-white px-2 plus" onClick={Add}>
           +
         </button>
+        <div>
+          <ToastContainer position="top-right" autoClose={3000} />
+        </div>
       </div>
     </div>
   );

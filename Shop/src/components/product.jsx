@@ -5,14 +5,15 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { useContext } from "react";
 import { HeaderContext } from "../App";
-function Product({
-  name,
-  price,
-  stock,
-  img,
-  id,
-}) {
-  const { cartItems, setCartItems, totalPrice, setTotalPrice, empty, setEmpty } = useContext(HeaderContext);
+function Product({ name, price, stock, img, id }) {
+  const {
+    cartItems,
+    setCartItems,
+    totalPrice,
+    setTotalPrice,
+    empty,
+    setEmpty,
+  } = useContext(HeaderContext);
   const [isCartEmpty, setIsCartEmpty] = useState(cartItems.length === 0);
   useEffect(() => {
     setIsCartEmpty(cartItems.length === 0);
@@ -43,11 +44,19 @@ function Product({
     if (totalPrice === 0) {
       setEmpty("hidden");
     }
+    if (stock <= 0) {
+      alert("Stokda yoxdur!");
+      return;
+    }
   }
   return (
     <div className="rounded-[20px] shadow-md border border-gray-200 relative">
       <button className="absolute top-2 right-2 text-[30px]">
-        <FontAwesomeIcon icon={regularHeart} className="text-gray-700 hover:text-red-500" id="AddFav" />
+        <FontAwesomeIcon
+          icon={regularHeart}
+          className="text-gray-700 hover:text-red-500"
+          id="AddFav"
+        />
       </button>
       <img
         src={img}
