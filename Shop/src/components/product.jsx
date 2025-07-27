@@ -21,7 +21,7 @@ function Product({ name, price, stock, img, id }) {
     setIsCartEmpty(cartItems.length === 0);
   }, [cartItems]);
   async function HandleDelete() {
-    const res = await fetch(`https://dummyjson.com/products/${id}`, {
+    await fetch(`https://dummyjson.com/products/${id}`, {
       method: "DELETE",
     });
     setData((prev) => prev.filter((item) => item.id !== id));
