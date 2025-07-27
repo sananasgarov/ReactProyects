@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-function Addmodule({ addBtn, setAddBtn, url, setUrl, data, setData }) {
+import { HeaderContext } from "../App";
+import { useContext } from "react";
+function Addmodule() {
+  const { addBtn, setAddBtn, url, setUrl, data, setData } = useContext(HeaderContext);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [stock, setStock] = useState("");

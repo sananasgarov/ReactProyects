@@ -3,7 +3,17 @@ import { faTh } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-function Navbar({ setUrl, hidden, setHidden, addBtn, setAddBtn }) {
+import { HeaderContext } from "../App";
+import { useContext } from "react";
+function Navbar() {
+  const {
+    hidden,
+    setHidden,
+    setCartItems,
+    addBtn,
+    setAddBtn,
+    setUrl,
+  } = useContext(HeaderContext);
   function AddToCardModule() {
     setHidden(!hidden);
     document.body.style.overflow = hidden === "hidden" ? "hidden" : "auto";

@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import Product from "./product";
-
-function Products({ url, cartItems, setCartItems, totalPrice, setTotalPrice, empty, setEmpty , data, setData }) {
+import { useContext } from "react";
+import { HeaderContext } from "../App";
+function Products() {
+  const { url, setUrl, cartItems, setCartItems, totalPrice, data, setData, setTotalPrice, empty, setEmpty } = useContext(HeaderContext);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -17,13 +19,7 @@ function Products({ url, cartItems, setCartItems, totalPrice, setTotalPrice, emp
             price={item.price}
             stock={item.stock}
             img={item.images}
-            cartItems={cartItems}
-            setCartItems={setCartItems}
-            totalPrice={totalPrice}
-            setTotalPrice={setTotalPrice}
             id={item.id}
-            empty={empty}
-            setEmpty={setEmpty}
           />
         );
       })}

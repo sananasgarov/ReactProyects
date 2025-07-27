@@ -10,7 +10,7 @@ function Sort({ setUrl }) {
   };
 
   const sortBy = (type, order = "asc") => {
-    setUrl(`https://dummyjson.com/products?sortBy=${type}&order=${order}`);
+    setUrl(`https://dummyjson.com/products?sortBy=${type}&order=${order}&limit=194&skip=0`);
     setIsOpen(false);
   };
 

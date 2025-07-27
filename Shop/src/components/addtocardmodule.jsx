@@ -1,16 +1,20 @@
 import QuickCard from "./quickcard";
-function Addtocardmodule({
-  cartItems,
-  hidden,
-  setCartItems,
-  totalPrice,
-  setTotalPrice,
-  empty,
-  setEmpty,
-  url,
-  data,
-  setData
-}) {
+import { useContext } from "react";
+import { HeaderContext } from "../App";
+function Addtocardmodule({}) {
+  const {
+    cartItems,
+    hidden,
+    setHidden,
+    setCartItems,
+    totalPrice,
+    setTotalPrice,
+    empty,
+    setEmpty,
+    url,
+    data,
+    setData,
+  } = useContext(HeaderContext);
   return (
     <div
       className={`fixed z-60 p-[20px] top-0 bg-white w-[400px] h-[100%] ${hidden}`}
@@ -32,8 +36,11 @@ function Addtocardmodule({
           setData={setData}
         />
       ))}
-      <p className={`text-[20px] font-bold ${totalPrice === 0 ? "hidden" : ""}`}>
-        Total price : <span className="Total">{Math.abs(totalPrice.toFixed(2))}</span> AZN
+      <p
+        className={`text-[20px] font-bold ${totalPrice === 0 ? "hidden" : ""}`}
+      >
+        Total price :{" "}
+        <span className="Total">{Math.abs(totalPrice.toFixed(2))}</span> AZN
       </p>
       <p className={`text-black font-bold text-[28px] ${empty}`}>
         Card is Empty

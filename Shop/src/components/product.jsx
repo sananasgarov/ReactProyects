@@ -3,18 +3,16 @@ import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
+import { useContext } from "react";
+import { HeaderContext } from "../App";
 function Product({
   name,
   price,
   stock,
   img,
   id,
-  cartItems,
-  setCartItems,
-  totalPrice,
-  setTotalPrice,
-  setEmpty,
 }) {
+  const { cartItems, setCartItems, totalPrice, setTotalPrice, empty, setEmpty } = useContext(HeaderContext);
   const [isCartEmpty, setIsCartEmpty] = useState(cartItems.length === 0);
   useEffect(() => {
     setIsCartEmpty(cartItems.length === 0);
