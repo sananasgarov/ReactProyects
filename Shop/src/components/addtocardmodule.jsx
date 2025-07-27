@@ -7,6 +7,7 @@ function Addtocardmodule({}) {
     hidden,
     totalPrice,
     empty,
+    data
   } = useContext(HeaderContext);
   return (
     <div
@@ -15,7 +16,7 @@ function Addtocardmodule({}) {
     >
       <p className="text-black font-bold text-[28px]">Quick Card</p>
       {cartItems.map((item) => (
-        <QuickCard key={item.id} item={item} />
+        <QuickCard key={item.id} item={item} data={data } />
       ))}
       <p
         className={`text-[20px] font-bold ${totalPrice === 0 ? "hidden" : ""}`}
