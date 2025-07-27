@@ -10,7 +10,7 @@ function Products() {
       .then((data) => setData(data.products));
   }, [url]);
   return (
-    <div className="grid grid-cols-4 gap-[20px] p-[30px]">
+    <div className="grid lg:grid-cols-4 gap-[20px] p-[30px] md:grid-cols-2 md:grid sm:grid-cols-1">
       {data.map((item) => {
         return (
           <Product

@@ -51,13 +51,13 @@ function Navbar() {
           placeholder="Search..."
           className="w-[500px] pl-10 pr-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-black"
         />
-        <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200" onClick={AddBtn}>Add</button>
+        <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200" onClick={AddBtn}>Add</button>
       </div>
       <div className="text-[24px] relative flex justify-between items-center gap-[20px]">
         <button className="cursor-pointer">
           <FontAwesomeIcon icon={regularHeart} className="text-gray-700" />
         </button>
-        <div class="absolute left-10 h-full w-px bg-[black]"></div>
+        <div className="absolute left-10 h-full w-px bg-[black]"></div>
         <button className="cursor-pointer" onClick={AddToCardModule}>
           <FontAwesomeIcon icon={faCartShopping} className="text-gray-600" />
         </button>

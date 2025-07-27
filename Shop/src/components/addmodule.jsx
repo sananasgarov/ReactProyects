@@ -38,7 +38,7 @@ function Addmodule() {
           onChange={(e) => setImage(e.target.value)}
         />
         <button
-          class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200"
+          className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200"
           onClick={AddProduct}
         >
           Add

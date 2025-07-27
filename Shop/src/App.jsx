@@ -5,6 +5,7 @@ import Footer from "./layout/footer";
 import Header from "./layout/header";
 import Sort from "./components/sort";
 import Addmodule from "./components/addmodule";
+import { useMemo } from "react";
 export const HeaderContext = createContext();
 function App() {
   const [url, setUrl] = useState(
@@ -17,28 +18,29 @@ function App() {
   const [empty, setEmpty] = useState("");
   const [data, setData] = useState([]);
   const [addBtn, setAddBtn] = useState("hidden");
+  const contextValue = useMemo(
+    () => ({
+      hidden,
+      setHidden,
+      cartItems,
+      setCartItems,
+      totalPrice,
+      setTotalPrice,
+      empty,
+      setEmpty,
+      url,
+      setUrl,
+      data,
+      setData,
+      addBtn,
+      setAddBtn,
+    }),
+    [hidden, cartItems, totalPrice, empty, url, data, addBtn]
+  );
   return (
     <div className="max-w-[1920px] mx-auto" id="body">
-      <HeaderContext.Provider
-        value={{
-          hidden,
-          setHidden,
-          cartItems,
-          setCartItems,
-          totalPrice,
-          setTotalPrice,
-          empty,
-          setEmpty,
-          url,
-          setUrl,
-          data,
-          setData,
-          addBtn,
-          setAddBtn,
-        }}
-      >
+      <HeaderContext.Provider value={contextValue}>
         <Header />
-
         <main>
           <Addmodule />
           <Salesleaders url={url} setUrl={setUrl} />
