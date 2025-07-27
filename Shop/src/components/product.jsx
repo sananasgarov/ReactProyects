@@ -26,7 +26,6 @@ function Product({ name, price, stock, img, id }) {
     });
     setData((prev) => prev.filter((item) => item.id !== id));
   }
-
   function AddToCard() {
     const item = {
       id,
@@ -35,7 +34,6 @@ function Product({ name, price, stock, img, id }) {
       price,
       count: 1,
     };
-
     const existingItem = cartItems.find((item) => item.id === id);
 
     if (existingItem) {
@@ -86,7 +84,10 @@ function Product({ name, price, stock, img, id }) {
         <button
           className="cursor-pointer"
           onClick={AddToCard}
-          disabled={stock === 0}
+          disabled={
+            stock <= 0 ||
+            (cartItems.find((item) => item.id === id)?.count || 0) >= stock
+          }
         >
           <p className="flex items-center justify-center bg-[#ff003c] rounded-[10px] text-white py-[12px] w-full gap-2">
             <FontAwesomeIcon icon={faCartPlus} />
