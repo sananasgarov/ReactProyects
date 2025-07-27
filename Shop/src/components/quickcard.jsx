@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { HeaderContext } from "../App";
 
 function QuickCard({ item ,data }) {
-  const { setData, cartItems, setCartItems, totalPrice, setTotalPrice, setEmpty } = useContext(HeaderContext);
+  const { cartItems, setCartItems, totalPrice, setTotalPrice, setEmpty } = useContext(HeaderContext);
   function Add() {
     const product = data.find((d) => d.id === item.id);
     if (product && product.stock > item.count) {

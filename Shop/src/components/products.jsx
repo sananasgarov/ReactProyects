@@ -3,7 +3,7 @@ import Product from "./product";
 import { useContext } from "react";
 import { HeaderContext } from "../App";
 function Products() {
-  const { url, setUrl, cartItems, setCartItems, totalPrice, data, setData, setTotalPrice, empty, setEmpty } = useContext(HeaderContext);
+  const { url, data, setData,} = useContext(HeaderContext);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
