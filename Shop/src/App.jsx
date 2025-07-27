@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Products from "./components/products";
 import Salesleaders from "./components/salesleaders";
 import Footer from "./layout/footer";
@@ -11,7 +11,7 @@ function App() {
   const [url, setUrl] = useState(
     `https://dummyjson.com/products?limit=194&skip=0&select=title,price,images,stock`
   );
-
+  const [loading, setLoading] = useState(true);
   const [hidden, setHidden] = useState("hidden");
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -37,6 +37,21 @@ function App() {
     }),
     [hidden, cartItems, totalPrice, empty, url, data, addBtn]
   );
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  });
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="text-center">
+          <div className="loader mb-4" />
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="max-w-[1920px] mx-auto" id="body">
       <HeaderContext.Provider value={contextValue}>
