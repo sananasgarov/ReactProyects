@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { useContext } from "react";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { HeaderContext } from "../App";
 function Product({ name, price, stock, img, id }) {
   const {
@@ -13,11 +14,18 @@ function Product({ name, price, stock, img, id }) {
     setTotalPrice,
     empty,
     setEmpty,
+    setData,
   } = useContext(HeaderContext);
   const [isCartEmpty, setIsCartEmpty] = useState(cartItems.length === 0);
   useEffect(() => {
     setIsCartEmpty(cartItems.length === 0);
   }, [cartItems]);
+  async function HandleDelete() {
+    const res = await fetch(`https://dummyjson.com/products/${id}`, {
+      method: "DELETE",
+    });
+    setData((prev) => prev.filter((item) => item.id !== id));
+  }
 
   function AddToCard() {
     const item = {
@@ -57,6 +65,12 @@ function Product({ name, price, stock, img, id }) {
           className="text-gray-700 hover:text-red-500"
           id="AddFav"
         />
+      </button>
+      <button
+        onClick={HandleDelete}
+        className="text-[30px] transition absolute top-2 left-2  duration-200"
+      >
+        <FontAwesomeIcon icon={faTrash} />
       </button>
       <img
         src={img}
