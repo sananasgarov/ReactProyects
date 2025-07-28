@@ -2,16 +2,36 @@ import React, { useState, useEffect } from "react";
 import { HeaderContext } from "../App";
 import { useContext } from "react";
 function Addmodule() {
-  const { addBtn, setAddBtn, url, setUrl, data, setData } = useContext(HeaderContext);
+  const { addBtn, setAddBtn, url, setUrl, data, setData } =
+    useContext(HeaderContext);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [stock, setStock] = useState("");
   const [image, setImage] = useState("");
   async function AddProduct() {
+    fetch("https://dummyjson.com/products/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title,
+        price,
+        stock,
+        image,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setData((prev) => [...prev, data]);
+        setUrl(
+          `https://dummyjson.com/products?limit=194&skip=0&select=title,price,images,stock`
+        );
+      })
     setAddBtn("hidden");
   }
   return (
-    <div className={`fixed inset-50 bg-text-gray-800 z-51 w-[600px] left-130  ${addBtn}`}>
+    <div
+      className={`fixed inset-50 bg-text-gray-800 z-51 w-[600px] left-130  ${addBtn}`}
+    >
       <div className="flex flex-col gap-[30px] justify-center bg-gray-100 w-[600px] h-[auto] mx-auto p-[30px] rounded-2xl">
         <input
           type="text"
@@ -20,7 +40,7 @@ function Addmodule() {
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          type="text"
+          type="number"
           placeholder="Product Price"
           className="border-[1px] border-solid"
           onChange={(e) => setPrice(e.target.value)}
