@@ -18,7 +18,7 @@ function Products() {
             name={item.title}
             price={item.price}
             stock={item.stock}
-            img={item.images}
+            img={item.thumbnail}
             id={item.id}
           />
         );

@@ -41,7 +41,7 @@ function Navbar() {
           onChange={(e) =>
             e.target.value === ""
               ? setUrl(
-                  `https://dummyjson.com/products?limit=194&skip=0&select=title,price,images,stock`
+                  `https://dummyjson.com/products?limit=194&skip=0&select=title,price,thumbnail,stock`
                 )
               : setUrl(
                   `https://dummyjson.com/products/search?q=${e.target.value}`

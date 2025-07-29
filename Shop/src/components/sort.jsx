@@ -10,13 +10,13 @@ function Sort({ setUrl }) {
   };
 
   const sortBy = (type, order = "asc") => {
-    setUrl(`https://dummyjson.com/products?sortBy=${type}&order=${order}&limit=194&skip=0`);
+    setUrl(`https://dummyjson.com/products?sortBy=${type}&order=${order}&limit=0&skip=0`);
     setIsOpen(false);
   };
 
   const showAll = () => {
     setUrl(
-      `https://dummyjson.com/products?limit=194&skip=0&select=title,price,images,stock`
+      `https://dummyjson.com/products?limit=0&skip=0&select=title,price,thumbnail,stock`
     );
     setIsOpen(false);
   };

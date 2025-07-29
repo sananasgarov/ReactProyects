@@ -9,7 +9,7 @@ import { useMemo } from "react";
 export const HeaderContext = createContext();
 function App() {
   const [url, setUrl] = useState(
-    `https://dummyjson.com/products?limit=194&skip=0&select=title,price,images,stock`
+    `https://dummyjson.com/products?limit=0&skip=0&select=title,price,thumbnail,stock`
   );
   const [loading, setLoading] = useState(true);
   const [hidden, setHidden] = useState("hidden");
