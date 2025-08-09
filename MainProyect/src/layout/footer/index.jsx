@@ -3,6 +3,7 @@ import footerbg1 from "../../assets/img/homeaboutbg.jpg";
 import footerbg2 from "../../assets/img/footerbg.jpg";
 import footerbg4 from "../../assets/img/footerbg4.jpg";
 import iconfooter from "../../assets/icons/iconfooter.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="relative mx-auto bg-[#282828]">
@@ -23,56 +24,64 @@ function Footer() {
           <div>
             <ul className="flex flex-col gap-[20px] text-white text-[18px] marker:text-primary list-disc list-inside">
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
-                  Əsas səhifə
-                </button>
+                <Link to="/">
+                  <button className="cursor-pointer hover:text-primary transition-all duration-300">
+                    Əsas səhifə
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   İcarə maşınlar
                 </button>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
-                  Haqqımızda
-                </button>
+                <Link to="/aboutus">
+                  <button className="cursor-pointer hover:text-primary transition-all duration-300">
+                    Haqqımızda
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
-                  Suallar
-                </button>
+                <Link to="/policy">
+                  <button className="cursor-pointer hover:text-primary transition-all duration-300">
+                    Suallar
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
-                  Əlaqə
-                </button>
+                <Link to="/contact">
+                  <button className="cursor-pointer hover:text-primary transition-all duration-300">
+                    Əlaqə
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
             <ul className="flex flex-col gap-[20px] text-white text-[18px] marker:text-primary list-disc list-inside">
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   Econom class
                 </button>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   Business class
                 </button>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   Crossover&SUVs
                 </button>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   Premium class
                 </button>
               </li>
               <li>
-                <button className="cursor-pointer hover:opacity-70 transition-all duration-300">
+                <button className="cursor-pointer hover:text-primary transition-all duration-300">
                   Buses&Minivans
                 </button>
               </li>
@@ -96,7 +105,7 @@ function Footer() {
 
                 <a
                   href="https://www.google.com/maps/place/13A+Khojali+Avenue,+Baku+1025/@40.3827821,49.8647553,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1b07314051:0x4b062ef0dfc7c9ab!8m2!3d40.382778!4d49.8673302!16s%2Fg%2F11xkvpdxp6?entry=ttu&g_ep=EgoyMDI1MDgwMy4wIKXMDSoASAFQAw%3D%3D"
-                  className="cursor-pointer hover:opacity-70 transition-all duration-300"
+                  className="cursor-pointer hover:text-primary transition-all duration-300"
                   target="_blank"
                 >
                   Bakı şəhəri, Xocalı pr.13
@@ -118,7 +127,7 @@ function Footer() {
 
                 <a
                   href="tel:+994503949194"
-                  className="cursor-pointer hover:opacity-70 transition-all duration-300"
+                  className="cursor-pointer hover:text-primary transition-all duration-300"
                 >
                   (+994) 50 394 91 94
                 </a>
@@ -139,7 +148,7 @@ function Footer() {
 
                 <a
                   href="tel:+994503949194"
-                  className="cursor-pointer hover:opacity-70 transition-all duration-300"
+                  className="cursor-pointer hover:text-primary transition-all duration-300"
                 >
                   (+994) 50 394 91 94
                 </a>
@@ -160,7 +169,7 @@ function Footer() {
 
                 <a
                   href="mailto:info@afn.az"
-                  className="cursor-pointer hover:opacity-70 transition-all duration-300"
+                  className="cursor-pointer hover:text-primary transition-all duration-300"
                 >
                   info@afn.az
                 </a>
@@ -170,7 +179,7 @@ function Footer() {
           <div className="flex flex-col items-center gap-[20px]">
             <div className="text-[#FFFFFF] tex-[18px]">Bizi izləyin</div>
             <div className="grid grid-cols-3 gap-[20px]">
-              <a href="">
+              <a href="" className="text-">
                 <svg
                   width="8"
                   height="16"
@@ -224,7 +233,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr  className="text-[#464646]"/>
+        <hr className="text-[#464646]" />
         <div className="text-[#A0A0A0] grid-cols-2 flex justify-between items-center">
           <p>© AFN Transport - 2021. Müəllif hüquqları qorunur.</p>
           <p>Sayt Jedai tərəfindən yaradılmışdır.</p>

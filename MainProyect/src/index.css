@@ -9,3 +9,28 @@
     --primary: #f36f20;
   }
 }
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.7s ease-in-out forwards;
+}
+
+.animate-slideOutRight {
+  animation: slideOutRight 0.7s ease-in-out forwards;
+}

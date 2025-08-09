@@ -62,8 +62,8 @@ function SliderSec() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hover:bg-primary hover:text-white transition-all duration-300" />
+          <CarouselNext className="hover:bg-primary hover:text-white transition-all duration-300" />
         </Carousel>
       </div>
     </div>

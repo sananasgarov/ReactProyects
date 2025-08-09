@@ -7,7 +7,7 @@ import Policy from "../pages/Policy";
 import Contact from "../pages/Contact";
 import Login from "../pages/login";
 import Register from "../pages/register";
-import NotFound from "../pages/notofund";
+import NotFound from "../pages/notfound";
 import Layout from "../layout/main";
 
 export const routers = createBrowserRouter([
@@ -16,7 +16,7 @@ export const routers = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <Home />,
       },
       {

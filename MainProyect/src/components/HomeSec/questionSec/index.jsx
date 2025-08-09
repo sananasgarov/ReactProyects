@@ -31,7 +31,7 @@ function QuestionSec() {
             value="item-1"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </AccordionTrigger>
             <AccordionContent asChild className="text-[#707070]">
@@ -54,7 +54,7 @@ function QuestionSec() {
             value="item-2"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </AccordionTrigger>
             <AccordionContent className="text-[#707070]">
@@ -77,7 +77,7 @@ function QuestionSec() {
             value="item-3"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </AccordionTrigger>
             <AccordionContent className="text-[#707070]">
@@ -100,7 +100,7 @@ function QuestionSec() {
             value="item-4"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
-            <AccordionTrigger>
+            <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </AccordionTrigger>
             <AccordionContent className="text-[#707070]">
