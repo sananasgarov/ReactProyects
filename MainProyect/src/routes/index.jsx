@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import AllProducts from "../pages/AllProducts";
 import SinglePage from "../pages/SinglePage";
 import About from "../pages/AboutUs";
 import Policy from "../pages/Policy";
@@ -9,6 +8,7 @@ import Login from "../pages/login";
 import Register from "../pages/register";
 import NotFound from "../pages/notfound";
 import Layout from "../layout/main";
+import AllProducts from "../pages/allproducts";
 
 export const routers = createBrowserRouter([
   {
