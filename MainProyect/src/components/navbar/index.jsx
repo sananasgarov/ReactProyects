@@ -10,7 +10,7 @@ function Navbar() {
   }
   return (
     <div className="relative ">
-      <div className="flex shadow-md bg-[#282828] justify-between items-center sticky z-[100] w-[100%] p-[20px] text-[white]">
+      <div className="flex shadow-md flex-wrap bg-[#282828] justify-between items-center z-[100] w-[100%] p-[20px] text-[white]">
         <div>
           <img
             src={iconImg}
@@ -18,7 +18,10 @@ function Navbar() {
             className="w-[142px] h-[62px] object-cover"
           />
         </div>
-        <div className="flex justify-between items-center gap-[30px]">
+        <div
+          className="flex-wrap md:hidden sm:hidden lg:flex justify-between items-center gap-[30px]"
+          id="navbarpriv"
+        >
           <a
             href="https://www.google.com/maps/place/13A+Khojali+Avenue,+Baku+1025/@40.3827821,49.8647553,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1b07314051:0x4b062ef0dfc7c9ab!8m2!3d40.382778!4d49.8673302!16s%2Fg%2F11xkvpdxp6?entry=ttu&g_ep=EgoyMDI1MDgwMy4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
@@ -79,10 +82,7 @@ function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
                 className="fill-current"
               >
-                <path
-                  d="M1.25925 1.22881L7.25925 4.45201C7.46085 4.56001 7.72165 4.61121 7.98405 4.61121C8.24645 4.61121 8.50725 4.56001 8.70885 4.45201L14.7088 1.22881C15.1 1.01841 15.4697 0.200012 14.7521 0.200012H1.21685C0.49925 0.200012 0.86885 1.01841 1.25925 1.22881ZM14.8905 2.99121L8.70885 6.21281C8.43685 6.35521 8.24645 6.37201 7.98405 6.37201C7.72165 6.37201 7.53125 6.35521 7.25925 6.21281C6.98725 6.07041 1.55285 3.22161 1.10885 2.99041C0.79685 2.82721 0.80005 3.01841 0.80005 3.16561V9.00001C0.80005 9.33601 1.25285 9.80001 1.60005 9.80001H14.4C14.7472 9.80001 15.2 9.33601 15.2 9.00001V3.16641C15.2 3.01921 15.2032 2.82801 14.8905 2.99121Z"
-
-                />
+                <path d="M1.25925 1.22881L7.25925 4.45201C7.46085 4.56001 7.72165 4.61121 7.98405 4.61121C8.24645 4.61121 8.50725 4.56001 8.70885 4.45201L14.7088 1.22881C15.1 1.01841 15.4697 0.200012 14.7521 0.200012H1.21685C0.49925 0.200012 0.86885 1.01841 1.25925 1.22881ZM14.8905 2.99121L8.70885 6.21281C8.43685 6.35521 8.24645 6.37201 7.98405 6.37201C7.72165 6.37201 7.53125 6.35521 7.25925 6.21281C6.98725 6.07041 1.55285 3.22161 1.10885 2.99041C0.79685 2.82721 0.80005 3.01841 0.80005 3.16561V9.00001C0.80005 9.33601 1.25285 9.80001 1.60005 9.80001H14.4C14.7472 9.80001 15.2 9.33601 15.2 9.00001V3.16641C15.2 3.01921 15.2032 2.82801 14.8905 2.99121Z" />
               </svg>
 
               <span>info@afn.az</span>

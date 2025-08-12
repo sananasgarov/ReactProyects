@@ -12,8 +12,8 @@ function Footer() {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${footerbg4})` }}
       ></div>
-      <div className="relative z-[1] py-[30px] px-[100px]">
-        <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 font-bold justify-center p-[30px]  gap-[20px]">
+      <div className="relative z-[1] py-[30px] px-[100px]" id="footerpriv">
+        <div className="grid lg:grid-cols-5 md:grid-cols-1 font-bold justify-center p-[30px] gap-[20px]">
           <div>
             <img
               src={iconfooter}
@@ -31,9 +31,11 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <button className="cursor-pointer hover:text-primary transition-all duration-300">
-                  İcarə maşınlar
-                </button>
+                <Link to="/allproducts">
+                  <button className="cursor-pointer hover:text-primary transition-all duration-300">
+                    İcarə maşınlar
+                  </button>
+                </Link>
               </li>
               <li>
                 <Link to="/aboutus">

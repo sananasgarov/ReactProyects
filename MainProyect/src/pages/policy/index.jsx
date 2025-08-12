@@ -11,9 +11,9 @@ import { motion, AnimatePresence } from "framer-motion";
 function Policy() {
   return (
     <div>
-      <div className="relative p-[80px]">
-        <div className="flex flex-col justify-center gap-[20px] items-center ">
-          <p className="text-[white] text-[36px] font-bold">Şərtlər</p>
+      <div className="p-[40px] max-w-[1320px] mx-auto">
+        <div className="flex flex-col items-center justify-center gap-[20px]">
+          <p className="text-[#282828] text-[36px]">Ən çox verilən suallar</p>
           <svg
             width="55"
             height="4"
@@ -24,28 +24,17 @@ function Policy() {
             <rect width="55" height="4" rx="2" fill="#F36F20" />
           </svg>
         </div>
-        <div
-          className="bg-cover bg-center absolute inset-0 z-[-1]"
-          style={{ backgroundImage: `url(${singlepage1920})` }}
-        ></div>
-        <div className="bg-cover bg-center absolute bg-[#282828D9] inset-0 z-[-1]"></div>
-      </div>
-      <div className="p-[80px] relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 z-[-1]"
-          style={{ backgroundImage: `url(${policybg})` }}
-        ></div>
-        <div className="w-[800px] mx-auto">
+        <div className=" mx-auto">
           <Accordion
             type="multiple"
             collapsible
-            className="gap-[20px] flex flex-col"
+            className="gap-[20px] flex  flex-col"
           >
             <AccordionItem
               value="item-1"
               className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
             >
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </AccordionTrigger>
               <AccordionContent asChild className="text-[#707070]">
@@ -69,7 +58,7 @@ function Policy() {
               value="item-2"
               className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
             >
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </AccordionTrigger>
               <AccordionContent className="text-[#707070]">
@@ -93,7 +82,7 @@ function Policy() {
               value="item-3"
               className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
             >
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </AccordionTrigger>
               <AccordionContent className="text-[#707070]">
@@ -117,7 +106,7 @@ function Policy() {
               value="item-4"
               className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
             >
-              <AccordionTrigger>
+              <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </AccordionTrigger>
               <AccordionContent className="text-[#707070]">

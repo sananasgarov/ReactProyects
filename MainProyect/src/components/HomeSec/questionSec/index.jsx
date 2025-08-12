@@ -8,8 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function QuestionSec() {
   return (
-    <div className="p-[40px]">
-      <div className="flex flex-col items-center justify-center gap-[20px] md:flex-wrap">
+    <div className="p-[40px] max-w-[1320px] mx-auto">
+      <div className="flex flex-col items-center justify-center gap-[20px]">
         <p className="text-[#282828] text-[36px]">Ən çox verilən suallar</p>
         <svg
           width="55"
@@ -21,11 +21,11 @@ function QuestionSec() {
           <rect width="55" height="4" rx="2" fill="#F36F20" />
         </svg>
       </div>
-      <div className="w-[800px] mx-auto">
+      <div className=" mx-auto">
         <Accordion
           type="multiple"
           collapsible
-          className="gap-[20px] flex flex-col"
+          className="gap-[20px] flex  flex-col"
         >
           <AccordionItem
             value="item-1"

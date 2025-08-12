@@ -34,3 +34,24 @@
 .animate-slideOutRight {
   animation: slideOutRight 0.7s ease-in-out forwards;
 }
+#my-element {
+  display: none;
+}
+#navbarpriv {
+  display: none;
+}
+#footerpriv {
+  padding: 30px;
+}
+
+@media (min-width: 640px) {
+  #my-element {
+    display: block;
+  }
+  #navbarpriv {
+    display: flex;
+  }
+  #footerpriv {
+    padding: 30px 0;
+  }
+}

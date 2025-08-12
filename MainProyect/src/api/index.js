@@ -1,8 +1,5 @@
 import axios from "axios";
-
-const api = axios.create({
-  baseURL: "https://68974a8c250b078c20417ec0.mockapi.io/:endpoint",
+const baseURL = import.meta.env.VITE_API_URL;
+export const api = axios.create({
+  baseURL,
 });
-
-export default api;
-

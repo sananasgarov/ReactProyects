@@ -511,32 +511,34 @@ function Cars() {
         </div>
       </div>
       <div className="text-center">
-        <button className="relative cursor-pointer bg-transparent w-[200px] border border-[#F36F20] text-[#F36F20] font-bold rounded-md py-2 px-4 hover:bg-[#F36F20] hover:text-white transition duration-300">
-          Hamisini Gosder
-          <svg
-            className="absolute bottom-5 right-45 hidden md:block"
-            width="26"
-            height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M26 1H9C4.58172 1 1 4.58172 1 9V26" stroke="#F36F20" />
-          </svg>
-          <svg
-            className="absolute -bottom-2 -right-2 hidden md:block"
-            width="26"
-            height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 25L17 25C21.4183 25 25 21.4183 25 17L25 0"
-              stroke="#F36F20"
-            />
-          </svg>
-        </button>
+        <Link to="/allproducts">
+          <button className="relative cursor-pointer bg-transparent w-[200px] border border-[#F36F20] text-[#F36F20] font-bold rounded-md py-2 px-4 hover:bg-[#F36F20] hover:text-white transition duration-300">
+            Hamisini Gosder
+            <svg
+              className="absolute bottom-5 right-45 hidden md:block"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M26 1H9C4.58172 1 1 4.58172 1 9V26" stroke="#F36F20" />
+            </svg>
+            <svg
+              className="absolute -bottom-2 -right-2 hidden md:block"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 25L17 25C21.4183 25 25 21.4183 25 17L25 0"
+                stroke="#F36F20"
+              />
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );

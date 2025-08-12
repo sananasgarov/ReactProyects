@@ -7,7 +7,7 @@ import QuestionSec from "../../components/HomeSec/questionSec";
 import Delivery from "../../components/HomeSec/deliverySec";
 function Home() {
   return (
-    <div className="max-w-[1440xp] mx-auto">
+    <div className="max-w-[1920px] mx-auto">
       <SliderSec />
       <HomeAbout />
       <Cars />

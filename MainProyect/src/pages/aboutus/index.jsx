@@ -4,6 +4,7 @@ import car1 from "../../assets/img/aboutcar1.jpg";
 import car2 from "../../assets/img/aboutcar2.jpg";
 import delivery from "../../assets/img/delivery.jpg";
 import polciybg2 from "../../assets/img/policybg2.png";
+import Maskgroupbg from "../../assets/img/Mask Group.png";
 function About() {
   return (
     <div>
@@ -29,24 +30,18 @@ function About() {
           ></div>
           <div className="bg-cover bg-center absolute bg-[#282828D9] inset-0 z-[-1]"></div>
         </div>
-        <div className="relative flex justify-center items-center">
-          <div className="bg-white w-[250px] p-[20px] rounded-md absolute z-[2] left-80 shadow-md h-[130px]">
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-[36px] text-primary">20+ il</p>
-              <p className="text-[#707070]">təcrübə</p>
-            </div>
+        <div className="relative flex flex-wrap justify-center items-center gap-6 py-16 px-4 md:px-0">
+          <div className="bg-white w-full max-w-xs md:w-60 p-5 rounded-md shadow-md text-center">
+            <p className="text-4xl md:text-5xl text-primary">20+ il</p>
+            <p className="text-gray-500">təcrübə</p>
           </div>
-          <div className="bg-white w-[250px] p-[20px] rounded-md absolute z-[2] shadow-md h-[130px]">
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-[36px] text-primary">80+</p>
-              <p className="text-[#707070]">icarə maşın</p>
-            </div>
+          <div className="bg-white w-full max-w-xs md:w-60 p-5 rounded-md shadow-md text-center">
+            <p className="text-4xl md:text-5xl text-primary">80+</p>
+            <p className="text-gray-500">icarə maşın</p>
           </div>
-          <div className="bg-white w-[250px] p-[20px] rounded-md absolute z-[2] right-80 shadow-md h-[130px]">
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-[36px] text-primary">98%</p>
-              <p className="text-[#707070]">müştəri məmnuniyyəti</p>
-            </div>
+          <div className="bg-white w-full max-w-xs md:w-60 p-5 rounded-md shadow-md text-center">
+            <p className="text-4xl md:text-5xl text-primary">98%</p>
+            <p className="text-gray-500">müştəri məmnuniyyəti</p>
           </div>
         </div>
       </div>
@@ -128,23 +123,33 @@ function About() {
             <img
               src={car2}
               alt=""
-              className="w-[400px] h-[440px] object-cover"
+              className="lg:w-[400px] md:w-[300px] h-[440px] object-cover"
             />
             <div className="w-[347px] h-[436px] bg-[#F36F20] absolute left-20 bottom-[-10px] z-[-1]"></div>
           </div>
         </div>
       </div>
-      <div className="bg-[#DFDFDF] grid lg:grid-cols-2 md:grid-cols-1 items-start justify-center ">
-        <div>
+      <div className="bg-[#DFDFDF] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-start justify-center">
+        <div className="relative">
           <img
             src={delivery}
             alt=""
-            className="w-[650px] h-[460px] object-cover"
+            className="w-full h-auto max-h-[460px] object-cover"
           />
         </div>
-        <div className="py-[30px] flex flex-col gap-[30px]">
-          <div className="flex flex-col gap-[10px]">
-            <p className="text-[36px] text-black font-bold">Çatdırılma</p>
+        <div className="py-8 px-4 md:px-8 relative flex flex-col gap-8 max-w-[600px] mx-auto lg:mx-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-20 -z-10"
+            style={{ backgroundImage: `url(${Maskgroupbg})` }}
+          ></div>
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-20 -z-20"
+            style={{ backgroundImage: `url(${Maskgroupbg})` }}
+          ></div>
+          <div className="flex flex-col gap-2">
+            <p className="text-3xl md:text-4xl text-black font-bold">
+              Çatdırılma
+            </p>
             <svg
               width="55"
               height="4"
@@ -155,10 +160,10 @@ function About() {
               <rect width="55" height="4" rx="2" fill="#F36F20" />
             </svg>
           </div>
-          <div className="text-[20px] text-[#282828] flex w-[600px] flex-col gap-[20px]">
+          <div className="text-[16px] md:text-[20px] text-[#282828] flex flex-col gap-5">
             <p>
               AFN Transport olaraq her Class”a uygun arenda avtomobil
-              modellərimizi istənilən ünvana çatdırılma mövcuddur.{" "}
+              modellərimizi istənilən ünvana çatdırılma mövcuddur.
             </p>
             <p>
               AFN Transport tam 10 ildir ki müştərilərinə arenda masinlar ilə

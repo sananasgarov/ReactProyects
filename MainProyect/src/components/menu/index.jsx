@@ -13,7 +13,7 @@ function Menu({ setIsOpen, setAnim, anim, isOpen }) {
       className={`fixed inset-0 z-[101] grid lg:grid-cols-2 bg-[#F3F3F3]
         ${isOpen ? 'animate-slideInRight' : 'animate-slideOutRight'}`}
     >
-      <div className="flex flex-col justify-between items-center p-8">
+      <div className="flex-col md:hidden sm:hidden lg:flex justify-between items-center p-8" id="my-element">
         <img src={icon} alt="AFN Rent A Car" className="w-50 object-contain" />
         <div className="opacity-10">
           <img src={menubg} alt="" className="w-130 object-contain" />
