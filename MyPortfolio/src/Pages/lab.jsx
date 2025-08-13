@@ -19,7 +19,7 @@ function Lab() {
             </p>
           </div>
           <button className="mt-4 w-max bg-[#9857D3] hover:bg-purple-800 transition text-white py-2 px-5 rounded-md">
-            View Project
+            <a href="https://pizza-mizza-five.vercel.app/" target="_blank">View Project</a>
           </button>
         </div>
         <div className="relative w-full max-w-[500px]">
