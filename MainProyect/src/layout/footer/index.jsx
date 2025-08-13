@@ -13,7 +13,7 @@ function Footer() {
         style={{ backgroundImage: `url(${footerbg4})` }}
       ></div>
       <div className="relative z-[1] py-[30px] px-[100px]" id="footerpriv">
-        <div className="grid lg:grid-cols-5 md:grid-cols-1 font-bold justify-center p-[30px] gap-[20px]">
+        <div className="grid lg:grid-cols-5 max-w-[1320px] mx-auto md:grid-cols-1 font-bold justify-center p-[30px] gap-[20px]">
           <div>
             <img
               src={iconfooter}

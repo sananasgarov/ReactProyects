@@ -9,8 +9,8 @@ function Navbar() {
     document.body.style.overflow = "hidden";
   }
   return (
-    <div className="relative ">
-      <div className="flex shadow-md flex-wrap bg-[#282828] justify-between items-center z-[100] w-[100%] p-[20px] text-[white]">
+    <div className="relative bg-[#282828]">
+      <div className="flex shadow-md flex-wrap max-w-[1320px] mx-auto justify-between items-center z-[100] w-[100%] p-[20px] text-[white]">
         <div>
           <img
             src={iconImg}

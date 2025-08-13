@@ -1,6 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
-
 import About from "../pages/AboutUs";
 import Policy from "../pages/Policy";
 import Contact from "../pages/Contact";
@@ -12,6 +10,7 @@ import AllProducts from "../pages/allproducts";
 import SinglePage from "../pages/singlepage";
 import PayMentSec from "../pages/payment";
 import PaymentFinal from "../pages/paymentfinal";
+import Home from "../pages/Home";
 
 export const routers = createBrowserRouter([
   {

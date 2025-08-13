@@ -3,8 +3,8 @@ import feauterbg from "../../../assets/img/feauter.jpg";
 import car7 from "../../../assets/img/car7.png";
 function Advandec() {
   return (
-    <div className="relative h-[750px] p-[40px] bg-[#DFDFDF]">
-      <div className="relative z-[10]">
+    <div className="relative lg:h-[750px] sm:h-[auto] p-[40px] bg-[#DFDFDF]">
+      <div className="relative z-[10] max-w-[1320px] mx-auto">
         <div className="text-[36px] text-[#282828] font-bold text-center">
           <p>AFN Transport-dan icarə maşın götürməyin üstünlükləri</p>
           <svg

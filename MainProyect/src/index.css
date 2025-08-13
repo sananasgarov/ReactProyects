@@ -43,10 +43,17 @@
 #footerpriv {
   padding: 30px;
 }
+#my-element3 {
+  display: none;
+}
 
 @media (min-width: 640px) {
   #my-element {
     display: block;
+  }
+  #my-element3 {
+    align-items: center;
+    display: flex;
   }
   #navbarpriv {
     display: flex;
