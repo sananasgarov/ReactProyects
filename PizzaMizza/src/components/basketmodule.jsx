@@ -1,4 +1,4 @@
-import QuickCard from "./quickcard";
+import QuickCard from "../../../PizzaMizza/src/components/quickcard";
 
 function Basketmodule({ hidden, setHidden, cartItems, totalPrice }) {
   return (
