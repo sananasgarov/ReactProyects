@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import About from "../pages/AboutUs";
+
 import Policy from "../pages/Policy";
 import Contact from "../pages/Contact";
 import Login from "../pages/login";
@@ -11,6 +11,7 @@ import SinglePage from "../pages/singlepage";
 import PayMentSec from "../pages/payment";
 import PaymentFinal from "../pages/paymentfinal";
 import Home from "../pages/Home";
+import About from "../pages/AboutUs";
 
 export const routers = createBrowserRouter([
   {
