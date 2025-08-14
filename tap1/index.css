@@ -1,0 +1,14 @@
+body {
+  background-image: url(https://preview.colorlib.com/theme/startup2/img/banner/banner.png.webp);
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+}
+.overlay {
+  content: "";
+  background: #1f1f1f;
+  opacity: 0.8;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
