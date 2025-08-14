@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import car6 from "../../assets/img/aboutcar2.jpg";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import DropdownMenuCheckboxes from "../../components/singlepage/daybtn";
 function SinglePage() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [hidden, setHidden] = useState("hidden");
   const [showfeauter, setShowFeauter] = useState("block");
   const [textcolor, setTextColor] = useState("text-black");
@@ -80,28 +81,55 @@ function SinglePage() {
       <br />
       <br />
       <div className="grid lg:grid-cols-2 md:grid-cols-1 items-start justify-center gap-[40px]">
-        <div className="">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <img src={car6} alt="" />
-              </CarouselItem>
-              <CarouselItem>
-                <img src={car6} alt="" />
-              </CarouselItem>
-              <CarouselItem>
-                <img src={car6} alt="" />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-4 border-0 top-1/2 text-white -translate-y-1/2rounded-full w-12 h-12 flex items-center justify-center shadow-lg font-bold text-2xl transition-colors duration-300 hover:bg-[#F36F20] hover:text-white" />
-            <CarouselNext className="absolute right-4 border-0 top-1/2 -translate-y-1/2 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg font-bold text-2xl transition-colors duration-300 hover:bg-[#F36F20] hover:text-white" />
-          </Carousel>
-          <br />
-          <div className="flex justify-start items-center gap-[20px]">
-            <img src={car6} alt="" className="w-[172px] h-[125px]" />
-            <img src={car6} alt="" className="w-[172px] h-[125px]" />
-            <img src={car6} alt="" className="w-[174px] h-[125px]" />
-          </div>
+        <div>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
+            loop={true}
+            spaceBetween={10}
+            navigation={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper2 mb-[20px]"
+          >
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={10}
+            slidesPerView={4}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={car6} />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="p-6 rounded-2xl flex flex-col justify-center items-start gap-[10px]">
           <div className="inline-block px-3 py-1 text-xs font-semibold text-white bg-orange-500 rounded-full">
@@ -135,17 +163,7 @@ function SinglePage() {
           </div>
           <br />
           <div className="flex gap-5 items-center justify-center">
-            <select
-              value={days}
-              onChange={(e) => setDays(Number(e.target.value))}
-              className="border border-[#F36F20] text-[#F36F20] rounded-lg px-[40px] font-bold py-[10px] text-sm outline-none"
-            >
-              {options.map((day) => (
-                <option key={day} value={day}>
-                  {day} gün
-                </option>
-              ))}
-            </select>
+            <DropdownMenuCheckboxes />
             <Link to="/payment">
               <button className="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-[40px] font-bold py-[10px] rounded-lg text-sm">
                 İndi icarə et

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import iconImg from "../../assets/img/iconwhite.png";
 import bgİmg from "../../assets/img/slider bg.png";
 import Menu from "../menu";
+import { Link } from "react-router";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   function openBtn() {
@@ -12,14 +13,14 @@ function Navbar() {
     <div className="relative bg-[#282828]">
       <div className="flex shadow-md flex-wrap max-w-[1320px] mx-auto justify-between items-center z-[100] w-[100%] p-[20px] text-[white]">
         <div>
-          <img
+          <Link to='/'><img
             src={iconImg}
             alt=""
             className="w-[142px] h-[62px] object-cover"
-          />
+          /></Link>
         </div>
         <div
-          className="flex-wrap md:hidden sm:hidden lg:flex justify-between items-center gap-[30px]"
+          className="flex-wrap lg:flex justify-between items-center gap-[30px]"
           id="navbarpriv"
         >
           <a

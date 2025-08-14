@@ -14,7 +14,7 @@ function Menu({ setIsOpen, setAnim, anim, isOpen }) {
         ${isOpen ? "animate-slideInRight" : "animate-slideOutRight"}`}
     >
       <div
-        className="flex-col md:hidden sm:hidden lg:flex max-w-[1320px] mx-auto justify-center p-8"
+        className="flex-col lg:flex max-w-[1320px] mx-auto justify-center p-8"
         id="my-element3"
       >
         <img src={icon} alt="AFN Rent A Car" className="w-50 object-contain" />

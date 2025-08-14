@@ -1,17 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-
-import Policy from "../pages/Policy";
-import Contact from "../pages/Contact";
+import Layout from "../layout/main";
+import Home from "../pages/home";
+import AllProducts from "../pages/allproducts";
+import PayMentSec from "../pages/payment";
+import PaymentFinal from "../pages/paymentfinal";
+import SinglePage from "../pages/singlepage";
+import About from "../pages/aboutus";
+import Policy from "../pages/policy";
+import Contact from "../pages/contact";
 import Login from "../pages/login";
 import Register from "../pages/register";
 import NotFound from "../pages/notfound";
-import Layout from "../layout/main";
-import AllProducts from "../pages/allproducts";
-import SinglePage from "../pages/singlepage";
-import PayMentSec from "../pages/payment";
-import PaymentFinal from "../pages/paymentfinal";
-import Home from "../pages/Home";
-import About from "../pages/AboutUs";
 
 export const routers = createBrowserRouter([
   {
