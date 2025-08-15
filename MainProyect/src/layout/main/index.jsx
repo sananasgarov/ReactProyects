@@ -27,7 +27,7 @@ function Layout() {
   }, [location.pathname]);
   return (
     <CarsContext.Provider value={{ cars, setCars }}>
-      <div>
+      <div className=" overflow-hidden">
         <Header />
         <div>
           <Outlet />
