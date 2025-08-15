@@ -12,7 +12,14 @@ function HomeAbout() {
       ></div>
 
       <div className="relative z-10 flex flex-col md:flex-row items-center md:justify-center gap-12 md:gap-16">
-        <div className="relative w-full max-w-md md:w-[500px]">
+        <div
+          className="relative w-full max-w-md md:w-[500px]"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <svg
             className="absolute bottom-[-44px] md:bottom-[-60px] sm:bottom-[-80px] z-0"
             width="470"
@@ -37,7 +44,14 @@ function HomeAbout() {
           />
         </div>
 
-        <div className="flex flex-col gap-6 max-w-xl text-center md:text-left px-2 md:px-0">
+        <div
+          className="flex flex-col gap-6 max-w-xl text-center md:text-left px-2 md:px-0"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <h2 className="text-[24px] sm:text-[28px] md:text-[36px] text-black font-bold">
             Avtomobil kirayəsi Bakıda
           </h2>
@@ -103,32 +117,38 @@ function HomeAbout() {
           </Link>
         </div>
       </div>
-
-      <div className="relative mt-16">
+      <div className="relative mt-16" data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false">
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-[50px]">
-          {[["20+ il", "təcrübə"], ["80+", "icarə maşın"], ["98%", "müştəri məmnuniyyəti"]].map(
-            ([title, subtitle], i) => (
-              <div
-                key={i}
-                className="relative flex hover:translate-y-[-20px] transition-all duration-300 hover: justify-center w-[220px] h-[100px] items-center"
-              >
-                <img
-                  src={HomeAboutBg}
-                  alt={`${title} fonu`}
-                  className="absolute w-[210px] h-[100px] rounded-md object-cover"
-                />
-                <div className="relative z-10 text-white text-center">
-                  <p className="text-[28px] sm:text-[32px] md:text-[36px] font-bold">{title}</p>
-                  <p>{subtitle}</p>
-                </div>
+          {[
+            ["20+ il", "təcrübə"],
+            ["80+", "icarə maşın"],
+            ["98%", "müştəri məmnuniyyəti"],
+          ].map(([title, subtitle], i) => (
+            <div
+              key={i}
+              className="relative flex hover:translate-y-[-20px] transition-all duration-300 hover: justify-center w-[220px] h-[100px] items-center"
+            >
+              <img
+                src={HomeAboutBg}
+                alt={`${title} fonu`}
+                className="absolute w-[210px] h-[100px] rounded-md object-cover"
+              />
+              <div className="relative z-10 text-white text-center">
+                <p className="text-[28px] sm:text-[32px] md:text-[36px] font-bold">
+                  {title}
+                </p>
+                <p>{subtitle}</p>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
-
 
 export default HomeAbout;

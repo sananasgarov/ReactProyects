@@ -23,16 +23,67 @@ function Partnyor() {
         </svg>
       </div>
       <div className="grid lg:grid-cols-6 max-w-[1320px] mx-auto md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center gap-[30px] px-4">
-        <img src={kapital} alt="Kapital" className="object-cover w-full" />
-        <img src={cci} alt="CCI" className="object-cover w-full" />
-        <img src={socar} alt="SOCAR" className="object-cover w-full" />
+        <img
+          src={kapital}
+          alt="Kapital"
+          className="object-cover w-full"
+          data-aos="fade-up"
+
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        />
+        <img
+          src={cci}
+          alt="CCI"
+          className="object-cover w-full"
+          data-aos="fade-up"
+          data-aos-duration="750"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        />
+        <img
+          src={socar}
+          alt="SOCAR"
+          className="object-cover w-full"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        />
         <img
           src={halliburtion}
           alt="Halliburton"
           className="object-cover w-full"
+          data-aos="fade-up"
+          data-aos-duration="850"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
         />
-        <img src={silkway} alt="Silkway" className="object-cover w-full" />
-        <img src={getravel} alt="Getravel" className="object-cover w-full" />
+        <img
+          src={silkway}
+          alt="Silkway"
+          className="object-cover w-full"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        />
+        <img
+          src={getravel}
+          alt="Getravel"
+          className="object-cover w-full"
+          data-aos="fade-up"
+          data-aos-duration="950"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        />
       </div>
       <div className="bg-[#282828] relative w-full">
         <img
@@ -42,7 +93,14 @@ function Partnyor() {
         />
         <div className="max-w-[1320px] mx-auto">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 mx-auto px-6 md:px-[80px] justify-center items-center py-[30px] gap-[30px]">
-            <div className="flex flex-col text-white w-full max-w-[600px] gap-[20px]">
+            <div
+              className="flex flex-col text-white w-full max-w-[600px] gap-[20px]"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <p className="text-[28px] md:text-[36px] font-bold">
                 Bir neçə dəqiqəyə arenda maşın Bakıda
               </p>
@@ -68,7 +126,14 @@ function Partnyor() {
                 Rezervasiya
               </button>
             </div>
-            <div className="w-full flex justify-center">
+            <div
+              className="w-full flex justify-center"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <img
                 src={car8}
                 alt="Car"

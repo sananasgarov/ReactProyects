@@ -56,10 +56,24 @@ function About() {
           style={{ backgroundImage: `url(${polciybg2})` }}
         ></div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
-          <div className="img-wrapper1">
+          <div
+            className="img-wrapper1"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <img src={car1} alt="Car 1" />
           </div>
-          <div className="flex flex-col gap-4 sm:gap-5">
+          <div
+            className="flex flex-col gap-4 sm:gap-5"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <p className="text-lg sm:text-xl text-[#F36F20]">BİZ KİMİK?</p>
             <p className="text-black font-bold text-xl sm:text-2xl">
               AFN Transport və Nəqliyyat şirkəti Azərbaycanda öz nəqliyyat
@@ -85,7 +99,14 @@ function About() {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
-          <div className="flex flex-col gap-4 sm:gap-5">
+          <div
+            className="flex flex-col gap-4 sm:gap-5"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <p className="text-lg sm:text-xl text-[#F36F20]">
               NİYƏ BİZİ SEÇMƏLİSİNİZ?
             </p>
@@ -115,21 +136,42 @@ function About() {
               olunur.
             </p>
           </div>
-          <div className="img-wrapper">
+          <div
+            className="img-wrapper"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <img src={car2} alt="Car 2" id="aboutcar2" />
           </div>
         </div>
       </div>
       <div className="bg-[#DFDFDF] ">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start max-w-[1320px] mx-auto">
-          <div className="relative">
+          <div
+            className="relative"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <img
               src={delivery}
               alt="Delivery"
               className="w-full h-auto max-h-[460px] object-cover"
             />
           </div>
-          <div className="py-6 sm:py-8 px-4 sm:px-6 md:px-8 relative flex flex-col gap-6 max-w-3xl mx-auto">
+          <div
+            className="py-6 sm:py-8 px-4 sm:px-6 md:px-8 relative flex flex-col gap-6 max-w-3xl mx-auto"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <div
               className="absolute inset-0 bg-cover bg-center opacity-20 -z-10"
               style={{ backgroundImage: `url(${Maskgroupbg})` }}

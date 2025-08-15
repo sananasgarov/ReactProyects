@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import singlepage1920 from "../../assets/img/single page image 1920.jpg";
 import car6 from "../../assets/img/aboutcar2.jpg";
 import { getAllCars } from "../../services";
 import Car from "../../components/HomeSec/car";
 import PaginationExample from "../../components/Paginition";
+import { CarsContext } from "../../layout/main";
 
 function AllProducts() {
-  const [cars, setCars] = useState([]);
+  const { cars, setCars } = useContext(CarsContext);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const data = await getAllCars();
-        setCars(data);
-      } catch (error) {
-        console.error(error);
-      }
-    })();
-  }, []);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentCars = cars.slice(startIndex, startIndex + itemsPerPage);
@@ -129,7 +119,8 @@ function AllProducts() {
           <Car
             title={item.model}
             year={item.year}
-            fuel_type={item.fuel_type}cd
+            fuel_type={item.fuel_type}
+            cd
             transmission={item.transmission}
             img={item.photos[1]}
             type={item.engine.type}

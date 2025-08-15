@@ -3,7 +3,7 @@ import delivery from "../../assets/img/delivery.jpg";
 import earth from "../../assets/img/earth.png";
 function Contact() {
   return (
-    <div className="bg-[#F3F3F3]  ">
+    <div className="bg-[#F3F3F3] relative">
       <div className="grid lg:grid-cols-2 gap-[50px] md:grid-cols-1 items-start justify-between ">
         <div className="relative">
           <div className="absolute inset-0 bg-[#242424] z-[1] opacity-50 w-[100%] h-[767px]"></div>
@@ -14,7 +14,13 @@ function Contact() {
           />
         </div>
         <div className="text-[#282828] max-w-[1320px] mx-auto py-[80px] px-[20px]">
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <p className="text-[36px] mb-[30px]">Əlaqə</p>
           </div>
           <div className="lg:grid-cols-2  relative grid gap-[30px] md:grid-cols-1 ">
@@ -22,7 +28,14 @@ function Contact() {
               className="bg-cover bg-center absolute inset-0 right-[-10px] z-[0]"
               style={{ backgroundImage: `url(${earth})` }}
             ></div>
-            <div className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1] border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1] border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300"
+            >
               <div className="flex items-center justify-start gap-[10px] mb-[10px]">
                 <svg
                   width="30"
@@ -53,7 +66,14 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1]  border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1]  border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300"
+            >
               <div className="flex items-center justify-start gap-[10px] mb-[10px]">
                 <svg
                   width="22"
@@ -80,7 +100,14 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1]   border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 relative z-[1]   border-[1px] border-[#A6A6A6] bg-white rounded-md transition-all duration-300"
+            >
               <div className="flex items-center justify-start gap-[10px] mb-[10px]">
                 <svg
                   width="28"
@@ -106,7 +133,14 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 border-[1px] relative z-[1]  border-[#A6A6A6] bg-white rounded-md transition-all duration-300">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              className="py-[40px] px-[25px] shadow-md hover:-translate-y-3 border-[1px] relative z-[1]  border-[#A6A6A6] bg-white rounded-md transition-all duration-300"
+            >
               <div className="flex items-center justify-start gap-[10px] mb-[10px]">
                 <svg
                   width="28"
@@ -142,7 +176,14 @@ function Contact() {
 
                 <p className="text-[24px] font-bold">Sosial şəbəkələr</p>
               </div>
-              <div className="text-[#707070] grid grid-cols-3 relative z-[1]  items-center justify-center gap-[10px] w-[150px]">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="false"
+                className="text-[#707070] grid grid-cols-3 relative z-[1]  items-center justify-center gap-[10px] w-[150px]"
+              >
                 <a
                   href="#!"
                   className="transiton-all hover:border-primary hover:fill-current hover:text-primary  duration-300 p-[10px] bg-white rounded-md border-[1px] border-[#707070] flex items-center justify-center"

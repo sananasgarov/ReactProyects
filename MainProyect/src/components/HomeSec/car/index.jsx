@@ -106,7 +106,7 @@ function Car({title,year,type,id,transmission,fuel_type,img}) {
           <span className="text-[#979797]">{fuel_type}</span>
         </div>
       </div>
-      <Link to="/product/:id">
+      <Link to={`/product/${id}`}>
         <button className="text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer border-primary w-[100%] rounded-md font-bold border-[1px] px-[20px] py-[10px]">
           Ətraflı
         </button>

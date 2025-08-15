@@ -318,7 +318,7 @@ function PayMentSec() {
           </div>
           <br />
           <div className="flex justify-center items-center">
-            <Link>
+            <Link to="/paymentfinal">
               <button className="bg-primary text-white rounded-md px-[80px] py-[10px] hover:opacity-80 cursor-pointer transition-all duration-300">Ödənişə davam et</button>
             </Link>
           </div>

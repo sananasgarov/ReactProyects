@@ -5,7 +5,14 @@ function Advandec() {
   return (
     <div className="relative lg:h-[750px] sm:h-[auto] p-[40px] bg-[#DFDFDF]">
       <div className="relative z-[10] max-w-[1320px] mx-auto">
-        <div className="text-[36px] text-[#282828] font-bold text-center">
+        <div
+          className="text-[36px] text-[#282828] font-bold text-center"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+        >
           <p>AFN Transport-dan icarə maşın götürməyin üstünlükləri</p>
           <svg
             width="55"
@@ -19,7 +26,14 @@ function Advandec() {
           </svg>
         </div>
         <div className="relative md:hidden sm:hidden lg:block" id="my-element">
-          <div className="flex justify-center items-center mt-[170px]">
+          <div
+            className="flex justify-center items-center mt-[170px]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
             <img
               src={car7}
               alt=""
@@ -27,7 +41,14 @@ function Advandec() {
             />
           </div>
           <div className="absolute top-[-105px] left-107">
-            <div className="flex gap-[10px] bottom-4 relative left-[-100px]">
+            <div
+              className="flex gap-[10px] bottom-4 relative left-[-100px]"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="30"
@@ -74,7 +95,14 @@ function Advandec() {
             </svg>
           </div>
           <div className="absolute top-[-140px] left-200">
-            <div className="flex gap-[10px] bottom-4 relative left-[-100px]">
+            <div
+              className="flex gap-[10px] bottom-4 relative left-[-100px]"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="32"
@@ -109,7 +137,14 @@ function Advandec() {
             </svg>
           </div>
           <div className="absolute top-[-100px] left-250">
-            <div className="flex  gap-[10px] bottom-[-30px] relative left-35">
+            <div
+              className="flex  gap-[10px] bottom-[-30px] relative left-35"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="30"
@@ -160,7 +195,14 @@ function Advandec() {
             </svg>
           </div>
           <div className="absolute left-65 bottom-[-10px]">
-            <div className="flex  gap-[10px] relative left-[-150px] bottom-[-10px]">
+            <div
+              className="flex  gap-[10px] relative left-[-150px] bottom-[-10px]"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="27"
@@ -207,7 +249,14 @@ function Advandec() {
             </svg>
           </div>
           <div className="absolute left-160 bottom-[-60px]">
-            <div className="flex gap-[10px] relative bottom-[-150px] left-[-100px]">
+            <div
+              className="flex gap-[10px] relative bottom-[-150px] left-[-100px]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="29"
@@ -272,7 +321,14 @@ function Advandec() {
             </svg>
           </div>
           <div className="absolute right-50 bottom-[-60px]">
-            <div className="flex gap-[10px] relative bottom-[-90px] right-[-100px]">
+            <div
+              className="flex gap-[10px] relative bottom-[-90px] right-[-100px]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
               <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
                 <svg
                   width="30"
@@ -311,13 +367,19 @@ function Advandec() {
             </svg>
           </div>
         </div>
-        <div className="lg:hidden text-[#282828] items-center justify-center md:gap-[50px] md:inline-block sm:inline-block">
-          <div className="flex flex-col gap-[30px]">
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 md:inline-block lg:hidden sm:inline-block text-[#282828] px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl ">
+            <div
+              className="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div className="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="30"
-                  height="21"
+                  className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 21"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -329,14 +391,22 @@ function Advandec() {
                 </svg>
               </div>
               <div>
-                <p>Dayanacağımızda 90 -dan çox icarə maşınlar mövcuddur</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  Dayanacağımızda 90 -dan çox icarə maşınlar mövcuddur
+                </p>
               </div>
             </div>
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+            <div
+              class="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="20"
-                  height="24"
+                  class="w-5 h-6 sm:w-6 sm:h-7 md:w-7 md:h-8"
                   viewBox="0 0 20 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -348,14 +418,22 @@ function Advandec() {
                 </svg>
               </div>
               <div>
-                <p>Bütün avtomobillərimiz tam sığortalıdır</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  Bütün avtomobillərimiz tam sığortalıdır
+                </p>
               </div>
             </div>
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+            <div
+              class="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="30"
-                  height="31"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 31"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -367,14 +445,22 @@ function Advandec() {
                 </svg>
               </div>
               <div>
-                <p>Avtomobil kirayələmək üçün münasib qiymətlər</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  Avtomobil kirayələmək üçün münasib qiymətlər
+                </p>
               </div>
             </div>
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+            <div
+              class="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="27"
-                  height="31"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 27 31"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -386,14 +472,22 @@ function Advandec() {
                 </svg>
               </div>
               <div>
-                <p>Təcrübəli və qayğıkeş heyət</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  Təcrübəli və qayğıkeş heyət
+                </p>
               </div>
             </div>
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+            <div
+              class="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="29"
-                  height="30"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 29 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -404,7 +498,7 @@ function Advandec() {
                       fill="#F36F20"
                     />
                     <path
-                      d="M22.5239 21.7388C22.1248 21.5045 21.7156 21.2725 21.3187 21.0482C20.6504 20.6693 19.9589 20.2779 19.2952 19.8634C18.7165 19.5023 18.0559 19.3955 17.4348 19.5626C16.8206 19.7281 16.3116 20.1426 16.0007 20.7311C15.7632 21.1805 15.3857 21.4805 14.9378 21.5764C14.4721 21.6754 13.9802 21.5463 13.5547 21.213C12.8075 20.6275 12.2103 20.1341 11.6742 19.66C10.2857 18.4304 8.99238 17.0305 7.82898 15.5008C7.49945 15.0677 7.3664 14.5813 7.45381 14.1319C7.54277 13.678 7.83749 13.2913 8.3078 13.0121L8.34106 12.992C8.42151 12.944 8.49732 12.8992 8.57158 12.8505C9.51993 12.2171 9.83863 11.0091 9.3134 10.0416C8.66982 8.85675 7.96744 7.63791 7.16528 6.31699C6.78006 5.68282 6.09702 5.31934 5.38537 5.31934C5.13783 5.31934 4.88721 5.36342 4.64432 5.45468C3.79574 5.77408 2.94949 6.14917 2.13108 6.51188L2.01815 6.56215C1.47435 6.80267 1.03885 7.16538 0.724016 7.63791C0.136126 8.52188 -0.0851062 9.54583 0.0278306 10.8621C0.140767 12.1807 0.541461 13.5194 1.2887 15.0762C2.49542 17.5897 4.20726 19.9454 6.52247 22.2779C9.10609 24.8811 11.706 26.7441 14.4706 27.9738C16.0355 28.6698 17.4356 29.0063 18.8759 29.0325C18.9208 29.0287 18.9749 29.0256 19.0345 29.0217C19.1969 29.0117 19.3988 28.9985 19.5984 28.9676C21.0449 28.7464 21.9964 28.0813 22.5084 26.9344C22.8635 26.1394 23.1961 25.3536 23.4986 24.6003C23.965 23.4395 23.5999 22.3699 22.5239 21.7388ZM22.0582 24.0505C21.9608 24.291 21.8571 24.5331 21.7573 24.7674C21.5902 25.1595 21.417 25.564 21.27 25.9684C20.9157 26.9421 20.1607 27.4355 18.9618 27.4788C18.8929 27.4812 18.8248 27.4827 18.7568 27.4827C17.5222 27.4827 16.3905 27.0921 15.5311 26.7449C13.4549 25.9058 11.4383 24.6235 9.36677 22.8247C6.72049 20.527 4.70697 18.1117 3.21249 15.4428C2.36237 13.9239 1.85957 12.6014 1.63138 11.2805C1.49291 10.4793 1.50529 9.82888 1.6716 9.23338C1.85648 8.56828 2.21463 8.13365 2.76616 7.90473C3.10497 7.76397 3.44301 7.62013 3.78027 7.47628C4.19721 7.29917 4.62884 7.11511 5.05584 6.94033C5.43023 6.78643 5.72572 6.89006 5.93303 7.24813C6.63541 8.45614 7.27435 9.56207 7.88545 10.6286C8.00457 10.8366 8.04015 11.0191 7.99451 11.1862C7.94423 11.3694 7.80268 11.5218 7.54818 11.6664C6.66789 12.1668 6.12951 12.8969 5.94696 13.835C5.76904 14.7475 5.95779 15.5812 6.507 16.3113C8.27144 18.657 10.3608 20.7458 12.717 22.5215C13.3056 22.9654 13.9585 23.1487 14.903 23.1348C15.8514 23.0915 16.727 22.5223 17.3056 21.5718C17.6916 20.9384 17.9407 20.8734 18.5781 21.2416L19.0925 21.5385C19.9643 22.0412 20.836 22.5447 21.7078 23.0489C22.1603 23.3096 22.2516 23.5717 22.0582 24.0505Z"
+                      d="M22.5239 21.7388C22.1248 21.5045 21.7156 21.2725 21.3187 21.0482C20.6504 20.6693 19.9589 20.2779 19.2952 19.8634C18.7165 19.5023 18.0559 19.3955 17.4348 19.5626C16.8206 19.7281 16.3116 20.1426 16.0007 20.7311C15.7632 21.1805 15.3857 21.4805 14.9378 21.5764C14.4721 21.6754 13.9802 21.5463 13.5547 21.213C12.8075 20.6275 12.2103 20.1341 11.6742 19.66C10.2857 18.4304 8.99238 17.0305 7.82898 15.5008C7.49945 15.0677 7.3664 14.5813 7.45381 14.1319C7.54277 13.678 7.83749 13.2913 8.3078 13.0121L8.34106 12.992C8.42151 12.944 8.49732 12.8992 8.57158 12.8505C9.51993 12.2171 9.83863 11.0091 9.3134 10.0416C8.66982 8.85675 7.96744 7.63791 7.16528 6.31699C6.78006 5.68282 6.09702 5.31934 5.38537 5.31934C5.13783 5.31934 4.88721 5.36342 4.64432 5.45468C3.79574 5.77408 2.94949 6.14917 2.13108 6.51188L2.01815 6.56215C1.47435 6.80267 1.03885 7.16538 0.724016 7.63791C0.136126 8.52188 -0.0851062 9.54583 0.0278306 10.8621C0.140767 12.1807 0.541461 13.5194 1.2887 15.0762C2.49542 17.5897 4.20726 19.9454 6.52247 22.2779C9.10609 24.8811 11.706 26.7441 14.4706 27.9738C16.0355 28.6698 17.4356 29.0063 18.8759 29.0325C18.9208 29.0287 18.9749 29.0256 19.0345 29.0217C19.1969 29.0117 19.3988 28.9985 19.5984 28.9676C21.0449 28.7464 21.9964 28.0813 22.5084 26.9344C22.8635 26.1394 23.1961 25.3536 23.4986 24.6003C23.965 23.4395 23.5999 22.3699 22.5239 21.7388ZM22.0582 24.0505C21.9608 24.291 21.8571 24.5331 21.7573 24.7674C21.5902 25.1595 21.417 25.564 21.27 25.9684C20.9157 26.9421 20.1607 27.4355 18.9618 27.4788C18.8929 27.4812 18.8248 27.4827 18.7568 27.4827C17.5222 27.4827 16.3905 27.0921 15.5311 26.7449C13.4549 25.9058 11.4383 24.6235 9.36677 22.8247C6.72049 20.527 4.70697 18.1117 3.21249 15.4428C2.36237 13.9239 1.85957 12.6014 1.63138 11.2805C1.49291 10.4793 1.50529 9.82888 1.6716 9.23338C1.85648 8.56828 2.21463 8.13365 2.76616 7.90473C3.10497 7.76397 3.44301 7.62013 3.78027 7.47628C4.19721 7.29917 4.62884 7.11511 5 fitted05584 6.94033C5.43023 6.78643 5.72572 6.89006 5.93303 7.24813C6.63541 8.45614 7.27435 9.56207 7.88545 10.6286C8.00457 10.8366 8.04015 11.0191 7.99451 11.1862C7.94423 11.3694 7.80268 11.5218 7.54818 11.6664C6.66789 12.1668 6.12951 12.8969 5.94696 13.835C5.76904 14.7475 5.95779 15.5812 6.507 16.3113C8.27144 18.657 10.3608 20.7458 12.717 22.5215C13.3056 22.9654 13.9585 23.1487 14.903 23.1348C15.8514 23.0915 16.727 22.5223 17.3056 21.5718C17.6916 20.9384 17.9407 20.8734 18.5781 21.2416L19.0925 21.5385C19.9643 22.0412 20.836 22.5447 21.7078 23.0489C22.1603 23.3096 22.2516 23.5717 22.0582 24.0505Z"
                       fill="#F36F20"
                     />
                     <path
@@ -437,30 +531,40 @@ function Advandec() {
                 </svg>
               </div>
               <div>
-                <p>24/7 xidmət mövcuddur</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  24/7 xidmət mövcuddur
+                </p>
               </div>
             </div>
-            <div className="flex items-center justify-start gap-[10px]">
-              <div className="bg-white rounded-md w-[50px] h-[50px] flex items-center justify-center">
+            <div
+              class="flex items-center justify-start gap-2 sm:gap-3 md:gap-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  width="30"
-                  height="31"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 31"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M14.8784 7.50952C14.1367 7.50952 13.4117 7.72945 12.795 8.14151C12.1783 8.55357 11.6976 9.13924 11.4138 9.82446C11.13 10.5097 11.0557 11.2637 11.2004 11.9911C11.3451 12.7185 11.7023 13.3867 12.2267 13.9112C12.7512 14.4356 13.4193 14.7928 14.1468 14.9375C14.8742 15.0822 15.6282 15.0079 16.3134 14.7241C16.9986 14.4402 17.5843 13.9596 17.9964 13.3429C18.4084 12.7262 18.6284 12.0012 18.6284 11.2595C18.6272 10.2653 18.2318 9.31214 17.5288 8.60912C16.8257 7.90611 15.8726 7.51065 14.8784 7.50952ZM14.8784 13.1345C14.5075 13.1345 14.145 13.0246 13.8367 12.8185C13.5283 12.6125 13.288 12.3197 13.1461 11.9771C13.0042 11.6344 12.967 11.2574 13.0394 10.8937C13.1117 10.53 13.2903 10.1959 13.5525 9.9337C13.8148 9.67147 14.1488 9.4929 14.5126 9.42055C14.8763 9.3482 15.2533 9.38533 15.5959 9.52725C15.9385 9.66916 16.2313 9.90948 16.4374 10.2178C16.6434 10.5262 16.7534 10.8887 16.7534 11.2595C16.7528 11.7566 16.5551 12.2332 16.2035 12.5847C15.852 12.9362 15.3755 13.1339 14.8784 13.1345Z"
+                    d="M14.8784 7.50952C14.1367 7.50952 13.4117 7.72945 12.795 8.14151C12.1783 8.55357 11.6976 9.13924 11.4138 9.82446C11.13 10.5097 11.0557 11.2637 11.2004 11.9911C11.3451 12.7185 11.7023 13.3867 12.2267 13.9112C12.7512 14.4356 13.4193 14.7928 14.1468 14.9375C14.8742 15.0822 15.6282 15.0079 16.3134 14.7241C16.9986 14.4402 17.5843 13.9596 17.9964 13.3429C18.4084 12.7262 18.6284 12.0012 18.6284 11.2595C18.6272 10.2653 18.2318 9.31214 17.5288 8.60912C16.8257 7.90611 15.8726 7.51065 14.8784 7.50952ZM14.8784 13.1345C14.5075 13.1345 14.145 13.0246 13.8367 12.8185C13.5283 12.6125 13.288 12.3197 13.1461 11.9771C13.0042 11.6344 13.967 11.2574 13.0394 10.8937C13.1117 10.53 13.2903 10.1959 13.5525 9.9337C13.8148 9.67147 14.1488 9.4929 14.5126 9.42055C14.8763 9.3482 15.2533 9.38533 15.5959 9.52725C15.9385 9.66916 16.2313 9.90948 16.4374 10.2178C16.6434 10.5262 16.7534 10.8887 16.7534 11.2595C16.7528 11.7566 16.5551 12.2332 16.2035 12.5847C15.852 12.9362 15.3755 13.1339 14.8784 13.1345Z"
                     fill="#F36F20"
                   />
                   <path
-                    d="M22.0843 4.0481C20.3027 2.26688 17.9243 1.20876 15.4084 1.07796C12.8924 0.947165 10.4172 1.75296 8.46043 3.33984C6.50365 4.92671 5.20405 7.18217 4.81243 9.6709C4.42082 12.1596 4.96497 14.7052 6.33984 16.8163L13.4242 27.6921C13.5819 27.9341 13.7975 28.1329 14.0514 28.2706C14.3053 28.4082 14.5896 28.4803 14.8784 28.4803C15.1672 28.4803 15.4515 28.4082 15.7054 28.2706C15.9593 28.1329 16.1749 27.9341 16.3325 27.6921L23.4172 16.8163C24.6929 14.858 25.2567 12.5206 25.014 10.196C24.7714 7.87135 23.737 5.70079 22.0843 4.0481ZM21.8462 15.7929L14.8784 26.4892L7.91063 15.7929C5.77781 12.5187 6.23525 8.13707 8.9983 5.3739C9.77048 4.6017 10.6872 3.98916 11.6961 3.57124C12.705 3.15333 13.7864 2.93823 14.8784 2.93823C15.9705 2.93823 17.0518 3.15333 18.0607 3.57124C19.0696 3.98916 19.9864 4.6017 20.7585 5.3739C23.5216 8.13707 23.979 12.5187 21.8462 15.7929Z"
+                    d="M22.0843 4.0481C20.3027 2.26688 17.9243 1.20876 15.4084 1.07796C12.8924 0.947165 10.4172 1.75296 8.46043 3.33984C6.50365 4.92671 5.20405 7.18217 4.81243 9.6709C4.42082 12.1596 4.96497 14.7052 6.33984 16.8163L13.4242 27.6921C13.5819 27.9341 13.7975 28.1329 14.0514 28.2706C14.3053 28.4082 14.5896 28.4803 14.8784 28.4803C15.1672 28.4803 15.4515 28.4082 15.7054 28.2706C15.9593 28.1329 16.1749 27.9341 16.3325 27.6921L23.4172 16.8163C24.6929 14.858 25.2567 12.5206 25.014 10.196C24.7714 7.87135 23.737 5.70079 22.0843 4.0481ZM21.8462 15.7929L14.8784 26.4892L7.91063 15.7929C5.77781 12.5187 6.23525 8.13707 8.9983 5.3739C9.77048 4.6017 10.6872 3.98916 11.6961 3.57124C12.705 3.15333 13.7864 3.93823 14.8784 2.93823C15.9705 2.93823 17.0518 3.15333 18.0607 3.57124C19.0696 3.98916 19.9864 4.6017 20.7585 5.3739C23.5216 8.13707 23.979 12.5187 21.8462 15.7929Z"
                     fill="#F36F20"
                   />
                 </svg>
               </div>
               <div>
-                <p>Kirayə maşını olduğunuz yerə çatdırırıq</p>
+                <p class="text-sm sm:text-base md:text-lg">
+                  Kirayə maşını olduğunuz yerə çatdırırıq
+                </p>
               </div>
             </div>
           </div>

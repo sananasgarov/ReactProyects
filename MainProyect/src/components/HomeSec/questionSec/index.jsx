@@ -30,6 +30,11 @@ function QuestionSec() {
           <AccordionItem
             value="item-1"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
           >
             <AccordionTrigger className="hover:text-primary transtion-all duration-300 cursor-pointer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -51,6 +56,11 @@ function QuestionSec() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
             value="item-2"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
@@ -74,6 +84,11 @@ function QuestionSec() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
             value="item-3"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
@@ -97,6 +112,11 @@ function QuestionSec() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="false"
+            data-aos-once="false"
             value="item-4"
             className="text-[black] text-[20px] border-l-[4px] border-b-[0px] transition-all duration-400 border-primary shadow-lg p-[20px]"
           >
