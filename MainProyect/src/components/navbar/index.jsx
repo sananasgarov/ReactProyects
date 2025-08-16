@@ -5,19 +5,42 @@ import Menu from "../menu";
 import { Link } from "react-router";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [fixed, setFixed] = useState(false);
+
   function openBtn() {
     setIsOpen(!isOpen);
     document.body.style.overflow = "hidden";
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="relative bg-[#282828]">
+    <div
+      className={`w-full bg-[#282828] z-[999] transition-all duration-500
+        ${
+          fixed ? "fixed top-0 left-0 shadow-md animate-slideDown" : "relative"
+        }`}
+    >
       <div className="flex shadow-md flex-wrap max-w-[1320px] mx-auto justify-between items-center z-[100] w-[100%] p-[20px] text-[white]">
         <div>
-          <Link to='/'><img
-            src={iconImg}
-            alt=""
-            className="w-[142px] h-[62px] object-cover"
-          /></Link>
+          <Link to="/">
+            <img
+              src={iconImg}
+              alt=""
+              className="w-[142px] h-[62px] object-cover"
+            />
+          </Link>
         </div>
         <div
           className="flex-wrap lg:flex justify-between items-center gap-[30px]"

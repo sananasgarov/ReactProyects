@@ -167,3 +167,25 @@
   height: 100%;
   object-fit: cover;
 }
+@keyframes navbarbtn {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 100deg;
+  }
+}
+@layer utilities {
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideDown {
+    animation: slideDown 0.5s ease-out;
+  }
+}
