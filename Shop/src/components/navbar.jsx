@@ -18,13 +18,6 @@ function Navbar() {
     setHidden(!hidden);
     document.body.style.overflow = hidden === "hidden" ? "hidden" : "auto";
   }
-  function AddBtn(params) {
-    if (addBtn === "hidden") {
-      setAddBtn("");
-    }else{
-      setAddBtn("hidden");
-    }
-  }
   return (
     <nav className="p-[20px] shadow-md flex justify-between items-center sticky top-0 left-0 right-0 z-[50]  bg-white">
       <div>
@@ -51,7 +44,6 @@ function Navbar() {
           placeholder="Search..."
           className="w-[500px] pl-10 pr-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-black"
         />
-        <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-200" onClick={AddBtn}>Add</button>
       </div>
       <div className="text-[24px] relative flex justify-between items-center gap-[20px]">
         <button className="cursor-pointer">
