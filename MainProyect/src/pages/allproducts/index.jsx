@@ -87,8 +87,8 @@ function AllProducts() {
         ></div>
         <div className="bg-[#282828D9] absolute inset-0 z-[-1]"></div>
       </div>
-      <div className="bg-white rounded-lg shadow-md py-[20px] gap-[40px] lg:absolute md:relative z-[2] left-0 right-0 mt-[-60px] mx-auto max-w-4xl flex flex-wrap items-center justify-center">
-        <div className="flex flex-col items-start gap-[10px]">
+      <div className="bg-white rounded-lg shadow-md relative py-[20px] gap-[40px] lg:absolute md:relative z-[2] left-0 right-0 mt-[-60px] mx-auto max-w-4xl grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 px-[30px] items-start justify-center" id="filter">
+        <div className="flex flex-col relative items-start gap-[10px]">
           <p className="text-gray-600">Class</p>
           <div className="relative w-[200px]">
             <button
@@ -131,24 +131,26 @@ function AllProducts() {
               ))}
             </ul>
           </div>
+          <svg
+            width="1"
+            height="70"
+            viewBox="0 0 1 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute right-0"
+            id="class-filter-divider"
+          >
+            <line
+              x1="0.5"
+              y1="-2.18557e-08"
+              x2="0.500003"
+              y2="70"
+              stroke="#E3E3E3"
+            />
+          </svg>
         </div>
-        <svg
-          width="1"
-          height="70"
-          viewBox="0 0 1 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="0.5"
-            y1="-2.18557e-08"
-            x2="0.500003"
-            y2="70"
-            stroke="#E3E3E3"
-          />
-        </svg>
 
-        <div className="flex flex-col  items-start gap-[10px]">
+        <div className="flex flex-col relative  items-start gap-[10px]">
           <p className="text-gray-600">Brand</p>
           <div className="relative">
             <button
@@ -201,24 +203,26 @@ function AllProducts() {
               ))}
             </ul>
           </div>
+          <svg
+            width="1"
+            height="70"
+            viewBox="0 0 1 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute right-0"
+            id="class-filter-divider"
+          >
+            <line
+              x1="0.5"
+              y1="-2.18557e-08"
+              x2="0.500003"
+              y2="70"
+              stroke="#E3E3E3"
+            />
+          </svg>
         </div>
-        <svg
-          width="1"
-          height="70"
-          viewBox="0 0 1 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="0.5"
-            y1="-2.18557e-08"
-            x2="0.500003"
-            y2="70"
-            stroke="#E3E3E3"
-          />
-        </svg>
 
-        <div className="flex flex-col  items-start gap-[10px]">
+        <div className="flex flex-col relative  items-start gap-[10px]">
           <p className="text-gray-600">Model</p>
           <div className="relative">
             <button
@@ -271,22 +275,24 @@ function AllProducts() {
               ))}
             </ul>
           </div>
+          <svg
+            width="1"
+            height="70"
+            viewBox="0 0 1 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute right-0"
+            id="class-filter-divider"
+          >
+            <line
+              x1="0.5"
+              y1="-2.18557e-08"
+              x2="0.500003"
+              y2="70"
+              stroke="#E3E3E3"
+            />
+          </svg>
         </div>
-        <svg
-          width="1"
-          height="70"
-          viewBox="0 0 1 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="0.5"
-            y1="-2.18557e-08"
-            x2="0.500003"
-            y2="70"
-            stroke="#E3E3E3"
-          />
-        </svg>
 
         <div className="flex flex-col  items-start gap-[10px]">
           <p className="text-gray-600">Year</p>
@@ -315,7 +321,7 @@ function AllProducts() {
               } gap-[10px] px-[20px] overflow-y-auto h-[200px] scroll-auto absolute z-[100] bg-white shadow-md rounded-lg p-4 mt-2`}
             >
               <button
-                onClick={() => setYear("Choose")}
+                onClick={() => {setYear("Choose"); setShowYear(false)}}
                 className="text-gray-800 hover:text-primary transition-colors duration-300"
               >
                 Choose

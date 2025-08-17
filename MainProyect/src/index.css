@@ -46,8 +46,87 @@
 #my-element3 {
   display: none;
 }
-
+#sliderprice {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 640px) {
+  #breadcrumb {
+    font-size: 16px;
+    gap: 5px;
+  }
+  #featuresinglepage {
+    flex-direction: row;
+  }
+  #day-rent{
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+  #rent-button{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  #day-rent-button{
+    padding-inline: 10px;
+  }
+  #sliderprice {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+  }
+  #mask-group {
+    width: 370px;
+    height: auto;
+  }
+  #carimg {
+    width: 100%;
+    height: auto;
+  }
+  #filter {
+    margin-top: 0px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    padding-inline: 0;
+  }
+  #filter::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(227, 227, 227);
+    width: 40%;
+    height: 1px;
+    transform: rotate(90deg);
+    left: 100px;
+    top: 50%;
+  }
+  #singlepage {
+    padding-block: 5px;
+  }
+  #feature-buttons {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  #class-filter-divider {
+    display: none;
+  }
+  #filter::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(227, 227, 227);
+    width: 95%;
+    height: 1px;
+    top: 50%;
+    left: 10px;
+  }
+}
 @media (min-width: 1024px) {
+  #singlepage {
+    padding: 15px;
+  }
+  
   #my-element {
     display: block;
   }

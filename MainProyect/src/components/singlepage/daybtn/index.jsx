@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-function DropdownMenuCheckboxes() {
+function DropdownMenuCheckboxes() {4
   const [days, setDays] = useState(10);
   const [showDropdown, setShowDropdown] = useState(false);
   return (
     <div className="relative">
       <button
         onClick={() => setShowDropdown(!showDropdown)}
-        className="rounded-md font-bold flex items-center justify-center gap-[10px] py-[10px] px-[30px] text-primary border border-primary"
+        className="rounded-md font-bold flex items-center justify-center gap-[10px] py-[10px] px-[30px] text-primary border border-primary" id="day-rent-button"
       >
         {days} gün
         <svg
@@ -23,7 +23,7 @@ function DropdownMenuCheckboxes() {
         </svg>
       </button>
       {showDropdown && (
-        <ul className="rounded-md border text-black absolute py-[10px] w-[100px] border-primary  border-[#282828] px-[10px] flex flex-col gap-[10px]">
+        <ul className="rounded-md border text-black absolute py-[10px] w-[100px] bg-white border-primary px-[10px] flex flex-col gap-[10px]">
           <li className="hover:opacity-70">
             <button
               onClick={() => {

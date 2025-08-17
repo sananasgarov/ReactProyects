@@ -7,10 +7,10 @@ function HomeAbout() {
   return (
     <div className="relative bg-[#EFEFEF] px-4 py-10 md:p-10 overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="absolute inset-0 sm:top-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${Maskgroupbg})` }}
       ></div>
-
+      
       <div className="relative z-10 flex flex-col md:flex-row items-center md:justify-center gap-12 md:gap-16">
         <div
           className="relative w-full max-w-md md:w-[500px]"
@@ -22,6 +22,7 @@ function HomeAbout() {
         >
           <svg
             className="absolute bottom-[-44px] md:bottom-[-60px] sm:bottom-[-80px] z-0"
+            id="mask-group"
             width="470"
             height="475"
             viewBox="0 0 524 475"

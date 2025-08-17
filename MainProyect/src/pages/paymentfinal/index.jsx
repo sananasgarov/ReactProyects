@@ -2,9 +2,9 @@ import React from "react";
 
 function PaymentFinal() {
   return (
-    <div className="bg-[#282828]">
-      <div className="max-w-[1320px] mx-auto w-[30%] py-[50px]">
-        <div className="bg-[#FFFFFF] rounded-lg flex py-[50px] flex-col items-center justify-center gap-4 p-8">
+    <div className="bg-[#282828] min-h-screen flex items-center justify-center px-4">
+      <div className="max-w-[1320px] mx-auto w-full sm:w-[80%] md:w-[60%] lg:w-[40%] py-10">
+        <div className="bg-white rounded-lg flex flex-col items-center justify-center gap-4 p-6 sm:p-10">
           <div>
             <svg
               width="73"
@@ -19,8 +19,10 @@ function PaymentFinal() {
               />
             </svg>
           </div>
-          <div className="text-[#282828] text-[36px]">Təşəkkür edirik!</div>
-          <div className="text-[20px] text-[#282828]">
+          <div className="text-[#282828] text-2xl sm:text-3xl lg:text-4xl font-semibold text-center">
+            Təşəkkür edirik!
+          </div>
+          <div className="text-base sm:text-lg lg:text-xl text-[#282828] text-center">
             Sifarişiniz qeydə alındı.
           </div>
         </div>

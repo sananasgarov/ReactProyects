@@ -91,7 +91,7 @@ function Partnyor() {
           alt="Mask Group"
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
-        <div className="max-w-[1320px] mx-auto">
+        <div className="max-w-[1320px] mx-auto relative z-[10]">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 mx-auto px-6 md:px-[80px] justify-center items-center py-[30px] gap-[30px]">
             <div
               className="flex flex-col text-white w-full max-w-[600px] gap-[20px]"

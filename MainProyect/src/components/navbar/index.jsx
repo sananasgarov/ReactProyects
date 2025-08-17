@@ -14,7 +14,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 200) {
         setFixed(true);
       } else {
         setFixed(false);

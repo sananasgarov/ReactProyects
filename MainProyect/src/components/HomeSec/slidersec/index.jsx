@@ -46,7 +46,7 @@ function SliderSec() {
                       alt={`${car.common} car`}
                       className="object-cover w-full max-w-[300px] sm:max-w-[450px] md:max-w-[600px] h-auto rounded-lg"
                     />
-                    <div className="absolute top-4 sm:top-0 left-4  bg-opacity-80 px-3 py-1 rounded text-[16px] sm:text-[20px] lg:text-[32px] font-bold text-[#282828]">
+                    <div className="absolute sm:top-0  sm:left-0 px-3 py-1 rounded text-[16px] sm:text-[20px] lg:text-[32px] font-bold text-[#282828]" id="sliderprice">
                       60 AZN/gün
                     </div>
                     <Link to={`/product/${car.id}`}>

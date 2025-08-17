@@ -377,7 +377,7 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div className="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div className="bg-white w-auto rounded-md p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
                   className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 21"
@@ -404,9 +404,9 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div class="bg-white rounded-md w-auto p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
-                  class="w-5 h-6 sm:w-6 sm:h-7 md:w-7 md:h-8"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 20 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -431,7 +431,7 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div class="bg-white rounded-md w-auto p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
                   class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 31"
@@ -458,7 +458,7 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div class="bg-white rounded-md w-auto p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
                   class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 27 31"
@@ -485,7 +485,7 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div class="bg-white rounded-md w-auto p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
                   class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 29 30"
@@ -544,7 +544,7 @@ function Advandec() {
               data-aos-mirror="false"
               data-aos-once="false"
             >
-              <div class="bg-white rounded-md w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
+              <div class="bg-white rounded-md w-auto p-[10px] h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
                 <svg
                   class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                   viewBox="0 0 30 31"

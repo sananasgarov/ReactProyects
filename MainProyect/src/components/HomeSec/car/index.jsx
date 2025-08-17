@@ -1,9 +1,9 @@
 import React from "react";
 import car6 from "../../../assets/img/car6.jpg";
 import { Link } from "react-router";
-function Car({title,year,type,id,transmission,fuel_type,img}) {
+function Car({ title, year, type, id, transmission, fuel_type, img }) {
   return (
-    <div className="relative rounded-md shadow-md  hover:scale-105 transition-all duration-300">
+    <div className="relative rounded-md shadow-md flex flex-col h-full justify-between hover:scale-105 transition-all duration-300">
       <div className="absolute bg-white text-primary right-2 rounded-md top-1  px-[3px]">
         Ekonom
       </div>
@@ -11,6 +11,7 @@ function Car({title,year,type,id,transmission,fuel_type,img}) {
         src={img}
         alt=""
         className="w-[310px] sm:w-[100%] h-[147px] md:w-[100%] object-cover"
+        id="carimg"
       />
       <div className="p-[10px]">
         <p className="text-black text-[20px]">{title}</p>
