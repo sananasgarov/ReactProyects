@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import car6 from "../../../assets/img/aboutcar2.jpg";
+import car6 from "../../../assets/img/car6.jpg";
 import { Link } from "react-router";
 import { CarsContext } from "../../../layout/main";
 function Other() {
@@ -13,7 +13,7 @@ function Other() {
               Ekonom
             </div>
             <img
-              src={item.photos[0]}
+              src={car6}
               alt=""
               className="w-[310px] sm:w-[100%] h-[147px] md:w-[100%] object-cover"
             />

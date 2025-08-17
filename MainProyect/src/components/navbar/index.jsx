@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import iconImg from "../../assets/img/iconwhite.png";
-import bgİmg from "../../assets/img/slider bg.png";
 import Menu from "../menu";
 import { Link } from "react-router";
 function Navbar() {

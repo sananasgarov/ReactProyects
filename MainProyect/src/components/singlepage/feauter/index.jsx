@@ -34,7 +34,7 @@ function FeauterSinglePage({
   return (
     <div>
       <div>
-        <div className="flex mb-4 sm:text-[16px] text-[24px]" id="feature-buttons">
+        <div className="flex mb-4 sm:text-[16px] lg:text-[24px]" id="feature-buttons">
           <button
             onClick={feauterBtn}
             className={`px-4 py-2 ${feutercolor} font-semibold`}

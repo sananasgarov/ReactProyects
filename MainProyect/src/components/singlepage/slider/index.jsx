@@ -7,10 +7,9 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import DropdownMenuCheckboxes from "../daybtn";
 import { Link } from "react-router";
-
+import car6 from "../../../assets/img/car6.jpg";
 function SliderSinglePage({ carData }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 items-start justify-center gap-6 lg:gap-10 p-4 lg:p-6">
       <div className="w-full">
@@ -28,25 +27,25 @@ function SliderSinglePage({ carData }) {
         >
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-auto object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-auto object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-auto object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-auto object-cover"
             />
           </SwiperSlide>
@@ -69,20 +68,32 @@ function SliderSinglePage({ carData }) {
         >
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-20 md:h-24 object-cover  cursor-pointer"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
+              src={car6}
               className="w-full h-20 md:h-24 object-cover  cursor-pointer"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src={carData?.photos[1]}
-              className="w-full h-20 md:h-24 object-cover cursor-pointer"
+              src={car6}
+              className="w-full h-20 md:h-24 object-cover  cursor-pointer"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={car6}
+              className="w-full h-20 md:h-24 object-cover  cursor-pointer"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={car6}
+              className="w-full h-20 md:h-24 object-cover  cursor-pointer"
             />
           </SwiperSlide>
           <SwiperSlide>

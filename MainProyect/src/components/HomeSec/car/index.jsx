@@ -8,7 +8,7 @@ function Car({ title, year, type, id, transmission, fuel_type, img }) {
         Ekonom
       </div>
       <img
-        src={img}
+        src={car6}
         alt=""
         className="w-[310px] sm:w-[100%] h-[147px] md:w-[100%] object-cover"
         id="carimg"
