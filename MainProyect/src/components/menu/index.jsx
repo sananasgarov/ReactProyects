@@ -120,11 +120,6 @@ function Menu({ setIsOpen, setAnim, anim, isOpen }) {
             </defs>
           </svg>
         </button>
-        <div className="flex gap-8 mb-12 z-10 text-lg font-semibold">
-          <span className="border-b-2 border-orange-500">AZ</span>
-          <span>EN</span>
-          <span>RU</span>
-        </div>
         <ul className="flex flex-col gap-6 text-3xl font-bold z-10">
           <li className="hover:text-orange-500 transition-colors">
             <Link to="/" onClick={closeMenu}>
