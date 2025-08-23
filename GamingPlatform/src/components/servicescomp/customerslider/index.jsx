@@ -1,0 +1,352 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import avatar from '../../../assets/img/avatar.png'
+import "./styles.css";
+function CustomerSlider() {
+  return (
+    <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="p-[20px]">
+          <div className="space-y-5">
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center gap-[10px] items-center">
+                <div>
+                  <img
+                    src={avatar}
+                    alt=""
+                    className="rounded-[50%] w-[70px] h-auto" 
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Viezh Robert</p>
+                  <p className="text-[#4F5665] text-[14px]">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-[10px]">
+                <p className="font-medium">4.5</p>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1891 5.16515L9.22187 4.58859L7.44844 0.99328C7.4 0.894842 7.32031 0.815155 7.22187 0.766717C6.975 0.644842 6.675 0.746405 6.55156 0.99328L4.77812 4.58859L0.810936 5.16515C0.701561 5.18078 0.601561 5.23234 0.524999 5.31047C0.432439 5.4056 0.381434 5.53359 0.383192 5.66631C0.38495 5.79904 0.439327 5.92563 0.534374 6.01828L3.40469 8.81672L2.72656 12.7683C2.71066 12.8602 2.72083 12.9547 2.75592 13.0412C2.79102 13.1276 2.84963 13.2025 2.92511 13.2573C3.00059 13.3121 3.08992 13.3447 3.18297 13.3513C3.27602 13.358 3.36907 13.3384 3.45156 13.2948L7 11.4292L10.5484 13.2948C10.6453 13.3464 10.7578 13.3636 10.8656 13.3448C11.1375 13.298 11.3203 13.0402 11.2734 12.7683L10.5953 8.81672L13.4656 6.01828C13.5437 5.94172 13.5953 5.84172 13.6109 5.73234C13.6531 5.4589 13.4625 5.20578 13.1891 5.16515Z"
+                    fill="#FEA250"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-[16px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}
+
+export default CustomerSlider;
