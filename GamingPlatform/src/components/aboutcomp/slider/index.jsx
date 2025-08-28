@@ -26,10 +26,18 @@ function Slider() {
         modules={[EffectCreative]}
         className="mySwiper2"
       >
-        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]"><img src={stray} alt="" /></SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]"><img src={lol} alt="" /></SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]"><img src={crysis} alt="" /></SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]"><img src={forhonor} alt="" /></SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]">
+          <img src={stray} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]">
+          <img src={lol} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]">
+          <img src={crysis} alt="" className="object-cover w-full h-full" />
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center text-[18px] bg-inherit border border-[#DC7000] rounded-[10px]">
+          <img src={forhonor} alt="" className="object-cover w-full h-full" />
+        </SwiperSlide>
       </Swiper>
     </>
   );
